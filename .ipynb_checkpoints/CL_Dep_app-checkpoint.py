@@ -10,6 +10,7 @@ def predict_booking_status(input_data):
 
 def main():
     st.title("Hotel Booking Status Prediction")
+    st.markdown("#### Use this app to predict whether your guest will possibly cancel or proceed with the booking they made before.")
 
     st.markdown("### Guest Information")
     adults = st.number_input("Number of Adults", 1, 4, step=1)
