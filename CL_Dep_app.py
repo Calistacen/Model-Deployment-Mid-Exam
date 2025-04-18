@@ -97,8 +97,15 @@ st.markdown("""
         position: fixed;
         bottom: 10px;
         left: 10px;
-        color: lightgray;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6); 
+        padding: 8px 16px;
         font-size: 13px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        font-family: 'Segoe UI', sans-serif;
+        
     }
     </style>
     <div class="watermark">Made by Calista Lianardi - 2702325880</div>
