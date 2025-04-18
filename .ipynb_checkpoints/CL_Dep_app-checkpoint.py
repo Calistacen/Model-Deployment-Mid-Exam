@@ -96,7 +96,7 @@ st.markdown("""
     .watermark {
         position: fixed;
         bottom: 10px;
-        right: 10px;
+        left: 10px;
         color: lightgray;
         font-size: 13px;
     }
