@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 class CalsNetRandomForest:
-    def __init__(self, criterion='entropy', n_estimators=300, max_depth=30, random_state=42, min_samples_leaf=1, 
+    def __init__(self, criterion='gini', n_estimators=200, max_depth=20, random_state=42, min_samples_leaf=1, 
     min_samples_split=2):
         self.model = model if model else RandomForestClassifier(criterion=criterion, 
                                                                 n_estimators=n_estimators, 
