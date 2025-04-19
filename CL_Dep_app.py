@@ -37,26 +37,6 @@ def main():
 
     st.markdown("### Booking Info")
     lead_time = st.number_input("How many days guest booked before check-in?", 0, step=1)
-    year = st.selectbox("Arrival Year", [2017, 2018])
-
-    month_options = {
-        "January": 1, 
-        "February": 2, 
-        "March": 3, 
-        "April": 4,
-        "May": 5, 
-        "June": 6, 
-        "July": 7, 
-        "August": 8,
-        "September": 9, 
-        "October": 10, 
-        "November": 11, 
-        "December": 12 
-    }
-    month = st.selectbox("Arrival Month", list(month_options.keys()))
-    month_value = month_options[month]
-
-    day = st.number_input("Arrival Day", min_value=1, max_value=31, step=1)
     avg_price = st.number_input("Avg Price per Room (Euro)", 0.0)
     room_type = st.radio("Type of Room Booked", [1, 2, 3, 4, 5, 6, 7])
     meal_options = {
@@ -78,7 +58,7 @@ def main():
         previous_cancelation = 0
     
     
-    input_data = [adults, children, weekend_nights, weekday_nights, meal_value, required_car_parking_space, room_type, lead_time, year, month_value, day, market_value, repeated_guest, previous_cancelation, previous_booking, avg_price, special_requests]
+    input_data = [adults, children, weekend_nights, weekday_nights, meal_value, required_car_parking_space, room_type, lead_time, market_value, repeated_guest, previous_cancelation, previous_booking, avg_price, special_requests]
 
     
     if st.button("Predict"):
